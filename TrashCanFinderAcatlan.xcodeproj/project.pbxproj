@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		887AF00F292D2CFA00625C29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887AF00E292D2CFA00625C29 /* AppDelegate.swift */; };
+		887AF011292D2CFA00625C29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887AF010292D2CFA00625C29 /* SceneDelegate.swift */; };
+		887AF013292D2CFA00625C29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887AF012292D2CFA00625C29 /* ViewController.swift */; };
+		887AF016292D2CFA00625C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 887AF014292D2CFA00625C29 /* Main.storyboard */; };
+		887AF018292D2CFD00625C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 887AF017292D2CFD00625C29 /* Assets.xcassets */; };
+		887AF01B292D2CFD00625C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 887AF019292D2CFD00625C29 /* LaunchScreen.storyboard */; };
+		887AF026292D2CFD00625C29 /* TrashCanFinderAcatlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887AF025292D2CFD00625C29 /* TrashCanFinderAcatlanTests.swift */; };
+		887AF030292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887AF02F292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.swift */; };
+		887AF032292D2CFD00625C29 /* TrashCanFinderAcatlanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887AF031292D2CFD00625C29 /* TrashCanFinderAcatlanUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		887AF022292D2CFD00625C29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 887AF003292D2CFA00625C29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 887AF00A292D2CFA00625C29;
+			remoteInfo = TrashCanFinderAcatlan;
+		};
+		887AF02C292D2CFD00625C29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 887AF003292D2CFA00625C29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 887AF00A292D2CFA00625C29;
+			remoteInfo = TrashCanFinderAcatlan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		887AF00B292D2CFA00625C29 /* TrashCanFinderAcatlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrashCanFinderAcatlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		887AF00E292D2CFA00625C29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		887AF010292D2CFA00625C29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		887AF012292D2CFA00625C29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		887AF015292D2CFA00625C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		887AF017292D2CFD00625C29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		887AF01A292D2CFD00625C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		887AF01C292D2CFD00625C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		887AF021292D2CFD00625C29 /* TrashCanFinderAcatlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrashCanFinderAcatlanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		887AF025292D2CFD00625C29 /* TrashCanFinderAcatlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashCanFinderAcatlanTests.swift; sourceTree = "<group>"; };
+		887AF02B292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrashCanFinderAcatlanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		887AF02F292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashCanFinderAcatlanUITests.swift; sourceTree = "<group>"; };
+		887AF031292D2CFD00625C29 /* TrashCanFinderAcatlanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashCanFinderAcatlanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		887AF008292D2CFA00625C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		887AF01E292D2CFD00625C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		887AF028292D2CFD00625C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		887AF002292D2CFA00625C29 = {
+			isa = PBXGroup;
+			children = (
+				887AF00D292D2CFA00625C29 /* TrashCanFinderAcatlan */,
+				887AF024292D2CFD00625C29 /* TrashCanFinderAcatlanTests */,
+				887AF02E292D2CFD00625C29 /* TrashCanFinderAcatlanUITests */,
+				887AF00C292D2CFA00625C29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		887AF00C292D2CFA00625C29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				887AF00B292D2CFA00625C29 /* TrashCanFinderAcatlan.app */,
+				887AF021292D2CFD00625C29 /* TrashCanFinderAcatlanTests.xctest */,
+				887AF02B292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		887AF00D292D2CFA00625C29 /* TrashCanFinderAcatlan */ = {
+			isa = PBXGroup;
+			children = (
+				887AF00E292D2CFA00625C29 /* AppDelegate.swift */,
+				887AF010292D2CFA00625C29 /* SceneDelegate.swift */,
+				887AF012292D2CFA00625C29 /* ViewController.swift */,
+				887AF014292D2CFA00625C29 /* Main.storyboard */,
+				887AF017292D2CFD00625C29 /* Assets.xcassets */,
+				887AF019292D2CFD00625C29 /* LaunchScreen.storyboard */,
+				887AF01C292D2CFD00625C29 /* Info.plist */,
+			);
+			path = TrashCanFinderAcatlan;
+			sourceTree = "<group>";
+		};
+		887AF024292D2CFD00625C29 /* TrashCanFinderAcatlanTests */ = {
+			isa = PBXGroup;
+			children = (
+				887AF025292D2CFD00625C29 /* TrashCanFinderAcatlanTests.swift */,
+			);
+			path = TrashCanFinderAcatlanTests;
+			sourceTree = "<group>";
+		};
+		887AF02E292D2CFD00625C29 /* TrashCanFinderAcatlanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				887AF02F292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.swift */,
+				887AF031292D2CFD00625C29 /* TrashCanFinderAcatlanUITestsLaunchTests.swift */,
+			);
+			path = TrashCanFinderAcatlanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		887AF00A292D2CFA00625C29 /* TrashCanFinderAcatlan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 887AF035292D2CFD00625C29 /* Build configuration list for PBXNativeTarget "TrashCanFinderAcatlan" */;
+			buildPhases = (
+				887AF007292D2CFA00625C29 /* Sources */,
+				887AF008292D2CFA00625C29 /* Frameworks */,
+				887AF009292D2CFA00625C29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrashCanFinderAcatlan;
+			productName = TrashCanFinderAcatlan;
+			productReference = 887AF00B292D2CFA00625C29 /* TrashCanFinderAcatlan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		887AF020292D2CFD00625C29 /* TrashCanFinderAcatlanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 887AF038292D2CFD00625C29 /* Build configuration list for PBXNativeTarget "TrashCanFinderAcatlanTests" */;
+			buildPhases = (
+				887AF01D292D2CFD00625C29 /* Sources */,
+				887AF01E292D2CFD00625C29 /* Frameworks */,
+				887AF01F292D2CFD00625C29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				887AF023292D2CFD00625C29 /* PBXTargetDependency */,
+			);
+			name = TrashCanFinderAcatlanTests;
+			productName = TrashCanFinderAcatlanTests;
+			productReference = 887AF021292D2CFD00625C29 /* TrashCanFinderAcatlanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		887AF02A292D2CFD00625C29 /* TrashCanFinderAcatlanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 887AF03B292D2CFD00625C29 /* Build configuration list for PBXNativeTarget "TrashCanFinderAcatlanUITests" */;
+			buildPhases = (
+				887AF027292D2CFD00625C29 /* Sources */,
+				887AF028292D2CFD00625C29 /* Frameworks */,
+				887AF029292D2CFD00625C29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				887AF02D292D2CFD00625C29 /* PBXTargetDependency */,
+			);
+			name = TrashCanFinderAcatlanUITests;
+			productName = TrashCanFinderAcatlanUITests;
+			productReference = 887AF02B292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		887AF003292D2CFA00625C29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					887AF00A292D2CFA00625C29 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					887AF020292D2CFD00625C29 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 887AF00A292D2CFA00625C29;
+					};
+					887AF02A292D2CFD00625C29 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 887AF00A292D2CFA00625C29;
+					};
+				};
+			};
+			buildConfigurationList = 887AF006292D2CFA00625C29 /* Build configuration list for PBXProject "TrashCanFinderAcatlan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 887AF002292D2CFA00625C29;
+			productRefGroup = 887AF00C292D2CFA00625C29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				887AF00A292D2CFA00625C29 /* TrashCanFinderAcatlan */,
+				887AF020292D2CFD00625C29 /* TrashCanFinderAcatlanTests */,
+				887AF02A292D2CFD00625C29 /* TrashCanFinderAcatlanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		887AF009292D2CFA00625C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887AF01B292D2CFD00625C29 /* LaunchScreen.storyboard in Resources */,
+				887AF018292D2CFD00625C29 /* Assets.xcassets in Resources */,
+				887AF016292D2CFA00625C29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		887AF01F292D2CFD00625C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		887AF029292D2CFD00625C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		887AF007292D2CFA00625C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887AF013292D2CFA00625C29 /* ViewController.swift in Sources */,
+				887AF00F292D2CFA00625C29 /* AppDelegate.swift in Sources */,
+				887AF011292D2CFA00625C29 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		887AF01D292D2CFD00625C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887AF026292D2CFD00625C29 /* TrashCanFinderAcatlanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		887AF027292D2CFD00625C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887AF030292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.swift in Sources */,
+				887AF032292D2CFD00625C29 /* TrashCanFinderAcatlanUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		887AF023292D2CFD00625C29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 887AF00A292D2CFA00625C29 /* TrashCanFinderAcatlan */;
+			targetProxy = 887AF022292D2CFD00625C29 /* PBXContainerItemProxy */;
+		};
+		887AF02D292D2CFD00625C29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 887AF00A292D2CFA00625C29 /* TrashCanFinderAcatlan */;
+			targetProxy = 887AF02C292D2CFD00625C29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		887AF014292D2CFA00625C29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				887AF015292D2CFA00625C29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		887AF019292D2CFD00625C29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				887AF01A292D2CFD00625C29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		887AF033292D2CFD00625C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		887AF034292D2CFD00625C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		887AF036292D2CFD00625C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrashCanFinderAcatlan/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.education.university.TrashCanFinderAcatlan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		887AF037292D2CFD00625C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrashCanFinderAcatlan/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.education.university.TrashCanFinderAcatlan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		887AF039292D2CFD00625C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.education.university.TrashCanFinderAcatlanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrashCanFinderAcatlan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrashCanFinderAcatlan";
+			};
+			name = Debug;
+		};
+		887AF03A292D2CFD00625C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.education.university.TrashCanFinderAcatlanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrashCanFinderAcatlan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrashCanFinderAcatlan";
+			};
+			name = Release;
+		};
+		887AF03C292D2CFD00625C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.education.university.TrashCanFinderAcatlanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrashCanFinderAcatlan;
+			};
+			name = Debug;
+		};
+		887AF03D292D2CFD00625C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.education.university.TrashCanFinderAcatlanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrashCanFinderAcatlan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		887AF006292D2CFA00625C29 /* Build configuration list for PBXProject "TrashCanFinderAcatlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				887AF033292D2CFD00625C29 /* Debug */,
+				887AF034292D2CFD00625C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		887AF035292D2CFD00625C29 /* Build configuration list for PBXNativeTarget "TrashCanFinderAcatlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				887AF036292D2CFD00625C29 /* Debug */,
+				887AF037292D2CFD00625C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		887AF038292D2CFD00625C29 /* Build configuration list for PBXNativeTarget "TrashCanFinderAcatlanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				887AF039292D2CFD00625C29 /* Debug */,
+				887AF03A292D2CFD00625C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		887AF03B292D2CFD00625C29 /* Build configuration list for PBXNativeTarget "TrashCanFinderAcatlanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				887AF03C292D2CFD00625C29 /* Debug */,
+				887AF03D292D2CFD00625C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 887AF003292D2CFA00625C29 /* Project object */;
+}
