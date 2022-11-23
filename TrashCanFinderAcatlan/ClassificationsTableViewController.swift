@@ -16,6 +16,7 @@ class ClassificationsTableViewController: UIViewController, UITableViewDelegate,
 
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.contentInsetAdjustmentBehavior = .never
     }
 
     // MARK: - Table view data source
@@ -36,6 +37,10 @@ class ClassificationsTableViewController: UIViewController, UITableViewDelegate,
         if let classificationCell = cell as? ClassificationTableViewCell {
             let classification = GarbageClassification.classifications[indexPath.row]
             classificationCell.nameLabel.text = classification.readableName
+            
+            if let icon = UIImage(named: classification.iconName) {
+                classificationCell.iconImageView?.image = icon
+            }
             
             return classificationCell
         }
