@@ -29,6 +29,14 @@ class PurchaseViewController: UIViewController, UITableViewDataSource, UITableVi
         } catch {}
         
         itemsLabel.text = "Items arrojados: \(trashList.count)"
+        
+        for trashItem in trashList {
+            if let trashPoints = trashItem["trashPoints"] as? Int {
+                contador += trashPoints
+            }
+        }
+        
+        pointsLabel.text = "\(contador) puntos"
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,9 +64,6 @@ class PurchaseViewController: UIViewController, UITableViewDataSource, UITableVi
             itemCell.nameLabel.text = trashType
             itemCell.pointsLabel.text = "+\(trashPoints)"
             itemCell.previewImageView.image = convertBase64StringToImage(imageBase64String: image)
-            
-            contador += trashPoints
-            pointsLabel.text = "\(contador) puntos"
             
             return itemCell
         }
