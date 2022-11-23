@@ -1,0 +1,6 @@
+framework module Pods_TrashCanFinderAcatlanTests {
+  umbrella header "Pods-TrashCanFinderAcatlanTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

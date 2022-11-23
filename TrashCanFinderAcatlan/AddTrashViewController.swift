@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import StorageManager
 
 extension UIImage {
     var highestQualityJPEGNSData:NSData { return self.jpegData(compressionQuality: 1.0)! as NSData }
@@ -22,6 +23,7 @@ class AddTrashViewController: UIViewController, UINavigationControllerDelegate, 
     
     var selectedTrashType: String?
     var selectedImage: UIImage?
+    var trashPoints: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,9 +52,23 @@ class AddTrashViewController: UIViewController, UINavigationControllerDelegate, 
     }
     
     @IBAction func publishPicture(_ sender: UIButton) {
-        guard let selectedTrashType = selectedTrashType, let selectedImage = selectedImage else { return }
+        guard let selectedTrashType = selectedTrashType, let selectedImage = selectedImage, let trashPoints = trashPoints else { return }
+        let base64Image = imageTobase64(image: selectedImage)
         
+        var storedTrash: [[String: Any]] = []
         
+        do {
+            storedTrash = try StorageManager.default.arrayValue(in: "trash")
+        } catch {}
+        let newTrash = [
+            "trashType": selectedTrashType,
+            "trashPoints": trashPoints,
+            "image": base64Image
+        ] as [String : Any]
+        storedTrash.append(newTrash)
+        
+        try! StorageManager.default.store(array: storedTrash, in: "trash")
+        performSegue(withIdentifier: "ShowTrashList", sender: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -63,8 +79,8 @@ class AddTrashViewController: UIViewController, UINavigationControllerDelegate, 
             return
         }
 
-        print(image.size)
         previewImageView.image = image
+        selectedImage = image
     }
     
     // MARK: - PickerView
@@ -83,6 +99,11 @@ class AddTrashViewController: UIViewController, UINavigationControllerDelegate, 
     
     func imageTobase64(image: UIImage) -> String {
         return image.jpegData(compressionQuality: 1)?.base64EncodedString() ?? ""
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedTrashType = GarbageClassification.classifications[row].readableName
+        trashPoints = GarbageClassification.classifications[row].trashPoints
     }
     
 }

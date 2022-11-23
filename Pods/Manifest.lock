@@ -1,0 +1,16 @@
+PODS:
+  - StorageManager (0.1.7)
+
+DEPENDENCIES:
+  - StorageManager
+
+SPEC REPOS:
+  trunk:
+    - StorageManager
+
+SPEC CHECKSUMS:
+  StorageManager: 5f9fef3df4af40bc6fb4d972da5da060a38f5972
+
+PODFILE CHECKSUM: 378b1be732ed819ff46facd8c62a4543bf670035
+
+COCOAPODS: 1.11.3
