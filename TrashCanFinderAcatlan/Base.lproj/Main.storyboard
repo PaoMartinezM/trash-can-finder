@@ -54,13 +54,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.92156862745098034" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0v3-wp-R2O"/>
+                    <navigationItem key="navigationItem" id="0v3-wp-R2O">
+                        <barButtonItem key="backBarButtonItem" title="Salir" id="CcU-Mm-uqe"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="893.02325581395348" y="-21.888412017167383"/>
         </scene>
-        <!--View Controller-->
+        <!--Menú-->
         <scene sceneID="Lza-j4-9Zf">
             <objects>
                 <viewController id="4jc-31-a9e" sceneMemberID="viewController">
@@ -106,14 +108,16 @@
                                     <color key="baseBackgroundColor" red="0.093931518495082855" green="0.55722856521606445" blue="0.51415246725082397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="awG-lg-AvO" kind="show" id="ozU-TE-fWm"/>
+                                    <segue destination="kKT-PB-3Dq" kind="show" id="T7h-bb-YdQ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FTq-hO-uIT"/>
                         <color key="backgroundColor" red="0.93290287256240845" green="0.92336475849151611" blue="0.69283699989318848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eCe-XA-JL1"/>
+                    <navigationItem key="navigationItem" title="Menú" id="eCe-XA-JL1">
+                        <barButtonItem key="backBarButtonItem" title="Menú" id="Lav-Pu-yCi"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RM5-ml-ae4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -188,30 +192,85 @@
                             <constraint firstItem="uX6-z1-2yG" firstAttribute="leading" secondItem="c35-dL-ihs" secondAttribute="leading" id="kHb-qV-WFa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Inicio" id="fsC-1k-722"/>
+                    <navigationItem key="navigationItem" title="Inicio" id="fsC-1k-722">
+                        <barButtonItem key="backBarButtonItem" title="Menú" id="ena-34-tQF"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="uX6-z1-2yG" id="c2b-0W-PwS"/>
+                        <segue destination="srI-eX-fTG" kind="show" identifier="ShowClassificationDetails" id="aPD-0v-182"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAm-04-Rr3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3332" y="594"/>
+            <point key="canvasLocation" x="3359" y="764"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="547-BN-aaz">
+        <scene sceneID="CYy-qB-CJF">
             <objects>
-                <viewController id="awG-lg-AvO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oDT-xq-8rk">
+                <viewController id="kKT-PB-3Dq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ucM-1i-jcV">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="KD1-rL-FQV"/>
-                        <color key="backgroundColor" red="0.93290287256240845" green="0.92336475849151611" blue="0.69283699989318848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="vB9-Gn-CY2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AIB-D2-NAY"/>
+                    <navigationItem key="navigationItem" id="L33-h5-8Q7"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UJV-VL-gTK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJH-SK-Dcl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3332" y="1350"/>
+            <point key="canvasLocation" x="3371" y="1460"/>
+        </scene>
+        <!--Detalles-->
+        <scene sceneID="zTn-Xb-gwV">
+            <objects>
+                <viewController id="srI-eX-fTG" customClass="ClassificationDetailsViewController" customModule="TrashCanFinderAcatlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EYg-qa-YOm">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ax6-ko-35q">
+                                <rect key="frame" x="16" y="119" width="398" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="XHG-Er-4YQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classification Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aof-sa-hLm">
+                                <rect key="frame" x="16" y="405" width="398" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions Label" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7P7-kY-Ui7">
+                                <rect key="frame" x="16" y="471" width="398" height="27.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VeI-Ug-Adk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VeI-Ug-Adk" firstAttribute="trailing" secondItem="Aof-sa-hLm" secondAttribute="trailing" constant="16" id="MBX-7q-hSB"/>
+                            <constraint firstItem="Aof-sa-hLm" firstAttribute="leading" secondItem="VeI-Ug-Adk" secondAttribute="leading" constant="16" id="Omo-F3-T3C"/>
+                            <constraint firstItem="VeI-Ug-Adk" firstAttribute="trailing" secondItem="Ax6-ko-35q" secondAttribute="trailing" constant="16" id="Rlh-sw-Z4q"/>
+                            <constraint firstItem="Aof-sa-hLm" firstAttribute="top" secondItem="Ax6-ko-35q" secondAttribute="bottom" constant="36" id="SgC-Wu-bVB"/>
+                            <constraint firstItem="Ax6-ko-35q" firstAttribute="leading" secondItem="VeI-Ug-Adk" secondAttribute="leading" constant="16" id="Xmo-ma-AlJ"/>
+                            <constraint firstItem="VeI-Ug-Adk" firstAttribute="trailing" secondItem="7P7-kY-Ui7" secondAttribute="trailing" constant="16" id="cva-QQ-3e0"/>
+                            <constraint firstItem="Ax6-ko-35q" firstAttribute="top" secondItem="VeI-Ug-Adk" secondAttribute="top" constant="16" id="eRJ-6F-JjB"/>
+                            <constraint firstItem="7P7-kY-Ui7" firstAttribute="top" secondItem="Aof-sa-hLm" secondAttribute="bottom" constant="30" id="p5S-To-Olv"/>
+                            <constraint firstItem="7P7-kY-Ui7" firstAttribute="leading" secondItem="VeI-Ug-Adk" secondAttribute="leading" constant="16" id="vLV-CI-mp6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalles" id="XSy-Jr-3KK"/>
+                    <connections>
+                        <outlet property="classificationNameLabel" destination="Aof-sa-hLm" id="pzK-7D-edD"/>
+                        <outlet property="instructionsLabel" destination="7P7-kY-Ui7" id="KM2-Yw-FKE"/>
+                        <outlet property="mapImageView" destination="Ax6-ko-35q" id="jVp-BK-Xgm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="se1-Tq-H8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4482" y="764"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3Ao-dG-5bH">

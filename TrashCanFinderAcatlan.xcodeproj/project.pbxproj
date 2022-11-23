@@ -16,6 +16,7 @@
 		887AF026292D2CFD00625C29 /* TrashCanFinderAcatlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887AF025292D2CFD00625C29 /* TrashCanFinderAcatlanTests.swift */; };
 		887AF030292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887AF02F292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.swift */; };
 		887AF032292D2CFD00625C29 /* TrashCanFinderAcatlanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887AF031292D2CFD00625C29 /* TrashCanFinderAcatlanUITestsLaunchTests.swift */; };
+		A67A6715292E856200D47D00 /* ClassificationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A6714292E856200D47D00 /* ClassificationDetailsViewController.swift */; };
 		A6F90B14292D465E00F1527F /* GarbageClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F90B13292D465E00F1527F /* GarbageClassification.swift */; };
 		A6F90B16292D46C400F1527F /* ClassificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F90B15292D46C400F1527F /* ClassificationsTableViewController.swift */; };
 		A6F90B18292D4A8000F1527F /* ClassificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F90B17292D4A8000F1527F /* ClassificationTableViewCell.swift */; };
@@ -52,6 +53,7 @@
 		887AF02B292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrashCanFinderAcatlanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		887AF02F292D2CFD00625C29 /* TrashCanFinderAcatlanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashCanFinderAcatlanUITests.swift; sourceTree = "<group>"; };
 		887AF031292D2CFD00625C29 /* TrashCanFinderAcatlanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashCanFinderAcatlanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A67A6714292E856200D47D00 /* ClassificationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationDetailsViewController.swift; sourceTree = "<group>"; };
 		A6F90B13292D465E00F1527F /* GarbageClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarbageClassification.swift; sourceTree = "<group>"; };
 		A6F90B15292D46C400F1527F /* ClassificationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationsTableViewController.swift; sourceTree = "<group>"; };
 		A6F90B17292D4A8000F1527F /* ClassificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				A6F90B13292D465E00F1527F /* GarbageClassification.swift */,
 				A6F90B15292D46C400F1527F /* ClassificationsTableViewController.swift */,
 				A6F90B17292D4A8000F1527F /* ClassificationTableViewCell.swift */,
+				A67A6714292E856200D47D00 /* ClassificationDetailsViewController.swift */,
 			);
 			path = TrashCanFinderAcatlan;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				887AF00F292D2CFA00625C29 /* AppDelegate.swift in Sources */,
 				887AF011292D2CFA00625C29 /* SceneDelegate.swift in Sources */,
 				A6F90B18292D4A8000F1527F /* ClassificationTableViewCell.swift in Sources */,
+				A67A6715292E856200D47D00 /* ClassificationDetailsViewController.swift in Sources */,
 				A6F90B14292D465E00F1527F /* GarbageClassification.swift in Sources */,
 				A6F90B16292D46C400F1527F /* ClassificationsTableViewController.swift in Sources */,
 			);
