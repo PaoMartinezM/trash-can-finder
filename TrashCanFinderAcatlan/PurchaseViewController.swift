@@ -13,6 +13,9 @@ class PurchaseViewController: UIViewController, UITableViewDataSource, UITableVi
     var trashList: [[String: Any]] = []
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var itemsLabel: UILabel!
+    @IBOutlet weak var pointsLabel: UILabel!
+    var contador = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,8 @@ class PurchaseViewController: UIViewController, UITableViewDataSource, UITableVi
             trashList = (try StorageManager.default.arrayValue(in: "trash")).reversed()
             tableView.reloadData()
         } catch {}
+        
+        itemsLabel.text = "Items arrojados: \(trashList.count)"
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -51,6 +56,9 @@ class PurchaseViewController: UIViewController, UITableViewDataSource, UITableVi
             itemCell.nameLabel.text = trashType
             itemCell.pointsLabel.text = "+\(trashPoints)"
             itemCell.previewImageView.image = convertBase64StringToImage(imageBase64String: image)
+            
+            contador += trashPoints
+            pointsLabel.text = "\(contador) puntos"
             
             return itemCell
         }
